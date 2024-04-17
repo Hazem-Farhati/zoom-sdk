@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "front": "cd ../client && npm start",
+    "back": "nodemon server.js",
+    "dev": "concurrently \"npm run front\" \"npm run back\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zoomus/websdk": "^2.18.3",
+    "axios": "^1.6.8",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-simple": "^0.5.6",
+    "mongoose": "^8.3.0",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.0",
+    "npm": "^10.5.2",
+    "randombytes": "^2.1.0",
+    "request-promise": "^4.2.6",
+    "zoomus": "^0.1.4"
+  }
+}
